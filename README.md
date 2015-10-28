@@ -6,7 +6,7 @@ Tis is my descripion.
 the code
 ```
 
-## Console out
+## Console output
 ```
 this is example java code.
 ```
