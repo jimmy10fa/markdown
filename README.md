@@ -1,8 +1,11 @@
-# markdown
+# markdown / addition game 
+
+## Introduction 
 Designing a math quiz that increases the difficulty as the user answers a question.
 
-## Java code
-import java.util.Random;
+## Code
+```
+ import java.util.Random;
 import java.util.Scanner;
 
 
@@ -176,8 +179,9 @@ public class Jimmy {
 										System.out.println("End of Round 4 ");
 										
 }}
-
-## Console output
+```
+## Console Output
+```
 ---Welcome to Jameel's Math Challenge!--- 
 You will be asked 5 question, Be ready user! 
 3 + 5 = 8
@@ -202,13 +206,13 @@ Answer was: 5
 End of Round 4 
 Your total points are: 10
 
-## Command promt output
-int A = (int) (65 + Math.random() * 26);
-
-char B = (char) A; {
-		                System.out.print( B );}
-
-
-## Conclusion
+```
+## Summary
 Here we are trying to write a code that sorts the rounds and harden the questionability as the user answers the question. Using the if and else statement was the correct choice. I learned that Math.random was specified for picking a random number. After figuring the inputs and everything I finally got it to work with the exception of hardening the questions.
+
+## Git commands
+Git add; this command accesses the user to add file or modify a file.
+Git commit: storing content that was changed.
+Git push: sharing command.
+Git Pull: bringing up a repository.
 
