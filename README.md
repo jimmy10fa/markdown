@@ -1,132 +1,54 @@
-# Addition Game Loop Methods
+# Project 1:WH10
 
-## Introduction 
-In this project we changed the addition game project by using methods and for loops and Math.*random()* 
-
-## Project Outline
-```
-//Call the addition game method.
-		AdditonGameMethod();
-
-// Set up my for loop to go through the number of rounds
-		int numberOfRounds = 3;
-		for(int roundNumber = 1; 
-		roundNumber <= numberOfRounds;  
-		roundNumber = roundNumber + 1){
-		
-```
-
-
-##  References & Literature
-*   Liang, Y. (2014). *Introduction to Java programming: Comprehensive version* (Tenth ed.). 
 
 ## Source Code
 ```
-import java.util.Scanner;
+package Jimmy;
 
-public class jim {
-	public static void main(String[] args) {
-		System.out.println("Hello class.");
-		
-		//Call the addition game method.
-		AdditonGameMethod();
-	}
-	public static void AdditonGameMethod() {
-		System.out.println("Inside the addition game method.");
-		
-		int hardness = 5;
-		int hardnessStep = 2;
-		int score = 0;
-		
-		// Set up my for loop to go through the number of rounds
-		int numberOfRounds = 3;
-		for(int roundNumber = 1; 
-		roundNumber <= numberOfRounds;  
-		roundNumber = roundNumber + 1){
-			System.out.println("Inside the for loop. Round: " + roundNumber);
-			boolean isAnswerCorrect = getAndCheckStudentAnswer(hardness);
-			if(isAnswerCorrect){
-				System.out.print("Your score was " + score + " and is now ");
-				score = score + hardness;
-				System.out.println(score + ".");
-				
-				if(roundNumber<numberOfRounds){
-					System.out.print("Your hardness was " + hardness + " and is now ");
-					hardness = hardness * hardnessStep;
-					System.out.println(hardness + ".");
-				}
-			}else{
-				if(roundNumber<numberOfRounds){
-					System.out.print("Your hardness was " + hardness + " and is now ");
-					if(hardness>5){
-						hardness = hardness / hardnessStep;
-						
-					}
-					System.out.println(hardness + ".");
-					
-				}
-				
-			}
-		}
-		System.out.println("The game is complete.");
-		System.out.println("Your final score was " + score );
-	}
+public class crrcrc {
+
 	
-	public static boolean getAndCheckStudentAnswer(int hardness) {
-		System.out.println("Inside get and check student answer method.");
-		int number1 = (int)(Math.random()*hardness);
-		int number2 = (int)(Math.random()*hardness);
-		System.out.println("Add " + number1 + " and " + number2 +".");
-		//Scanner input = new Scanner(System.in);
-		//int studentAnswer = input.nextInt();
-		Scanner get = new Scanner(System.in);
-		int studentAnswer = get.nextInt();
-		if(studentAnswer == (number1 + number2)){
-			System.out.println("Good work, your answer was correct.");
-			return true;
-		}else{
-			System.out.println("Nice try, but the correct answer was " + (number1 + number2));
-			return false;
-		}
-	}
-}
+			public static void main(String[] args) {			//Jameel Fatani
+				
+				// Generating an array named "jimmy" that starts from 0 and ends at 6
+				int[] jimmy= {26,43,21,56,55,44};
+				
+				
+				
+				// Sorting array in using the for loop
+				System.out.println("The sorted Arrays are ");
+				
+				
+				
+				//for loop
+				for (int sort : jimmy) {
+				    System.out.println(sort);
+				
+				
+				
+			
+				}}}
+
+
+
 ```
 
 ## Console Output
 ```
-Hello class.
-Inside the addition game method.
-Inside the for loop. Round: 1
-Inside get and check student answer method.
-Add 4 and 3.
-5
-Nice try, but the correct answer was 7
-Your hardness was 5 and is now 5.
-Inside the for loop. Round: 2
-Inside get and check student answer method.
-Add 1 and 4.
-5
-Good work, your answer was correct.
-Your score was 0 and is now 5.
-Your hardness was 5 and is now 10.
-Inside the for loop. Round: 3
-Inside get and check student answer method.
-Add 7 and 8.
-15
-Good work, your answer was correct.
-Your score was 5 and is now 15.
-The game is complete.
-Your final score was 15
+The sorted Arrays are 
+26
+43
+21
+56
+55
+44
 
 ```
 
-## Command Prompt Output
-```
-I Pulled the code from Git Hub
-I used Git hub to write my report 
 
-```
+## console history using git.
+I didn't understand the purpose of this consol so I'll try my best,
 
-## Summary
-For this assignment we rework the addition game using methods and for loops.
-
+git push: add the changes to gir
+git pull: to retrev the information from git
+git add: to add the information to git
